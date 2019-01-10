@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aigachu/Stella/issues"
   },
-  "homepage": "https://github.com/Aigachu/Stella#readme"
+  "homepage": "https://github.com/Aigachu/Stella#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
 }
