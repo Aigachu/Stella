@@ -45,3 +45,5 @@ client.on('message', msg => {
 client.login('token').catch(error => {
   throw error;
 });
+
+//Aren't we all?
