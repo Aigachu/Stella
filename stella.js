@@ -5,7 +5,7 @@
  *
  * I'll try to keep this concise and not go too crazy with comments. The README.md file will go in depth.
  *
- * PLEASE NOTE THAT this tutorial assumes that you know minimum coding concepts, as well as what Javascript. You don't
+ * PLEASE NOTE THAT this tutorial assumes that you know minimum coding concepts, as well as what Javascript is. You don't
  * need to be a Javascript expert, as the code here will be basic. General coding knowledge should be enough, and
  * this can even be considered practice to become a programmer!
  *
@@ -14,10 +14,12 @@
 
 // Load the 'discord.js' library. If this library is missing, run 'npm install' in your command line.
 const DiscordJS = require('discord.js');
+
+// Instantiate the Discord Client class.
 const client = new DiscordJS.Client();
 
 // Define what to do when a 'ready' event occurs.
-// Code within this block is executed when the bot when a successful connection with Discord is established.
+// Code within this block is executed when a successful connection with Discord is established.
 client.on('ready', () => {
 
   // Send a message to the console.
@@ -26,7 +28,7 @@ client.on('ready', () => {
 });
 
 // Define what to do when a 'message' event occurs.
-// Code within this block is executed EVERYTIME a message is sent in a channel the bot is in.
+// Code within this block is executed EVERY TIME a message is sent in a channel the bot is in.
 client.on('message', msg => {
 
   // If the content of the message is EXACTLY 'ping', make the bot reply to the message with 'Pong!'.
@@ -37,9 +39,11 @@ client.on('message', msg => {
 });
 
 // Make the bot login to Discord.
-// You need to enter your bot's token here. Replace 'token'.
+// You need to enter your bot's token here. Replace 'token'. Keep the single quotes though.
 // To get your bot's token, visit 'https://discordapp.com/developers/applications/' and create an application.
-// Alternatively, you can ask Aiga to give you Stella's token. :) You can test your code on her!
-client.login('NTM1MzA5NDIzMzU5Mjk1NDg5.DyGVPQ.val_Bdn-Dz9Ehm-L3oXymdVVP28').catch(error => {
+// Remember to NEVER commit your token. I'll explain a strategy to save the token elsewhere.
+client.login('token').catch(error => {
   throw error;
 });
+// aiga suckssssssssssssss
+//Aren't we all?
