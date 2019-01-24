@@ -12,6 +12,9 @@
  * Without further ado, let's go.
  */
 
+// Load .env variables.
+require('dotenv').load();
+
 // Load the 'discord.js' library. If this library is missing, run 'npm install' in your command line.
 const DiscordJS = require('discord.js');
 
@@ -42,7 +45,9 @@ client.on('message', msg => {
 // You need to enter your bot's token here. Replace 'token'. Keep the single quotes though.
 // To get your bot's token, visit 'https://discordapp.com/developers/applications/' and create an application.
 // Remember to NEVER commit your token. I'll explain a strategy to save the token elsewhere.
-client.login('token').catch(error => {
+// You need to create a .env file that contains your bot's token!
+// That file will be ignored by git, so don't worry about it being committed. :)
+client.login(process.env.BOT_TOKEN).catch(error => {
   throw error;
 });
 
