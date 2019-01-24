@@ -46,7 +46,5 @@ client.login('token').catch(error => {
   throw error;
 });
 
-//Aren't we all?
-//Second change
-//aiga suckssssssssssssss
+// Dango's so cool!
 
