@@ -40,6 +40,6 @@ client.on('message', msg => {
 // You need to enter your bot's token here. Replace 'token'.
 // To get your bot's token, visit 'https://discordapp.com/developers/applications/' and create an application.
 // Alternatively, you can ask Aiga to give you Stella's token. :) You can test your code on her!
-client.login('token').catch(error => {
+client.login('NTM1MzA5NDIzMzU5Mjk1NDg5.DyGVPQ.val_Bdn-Dz9Ehm-L3oXymdVVP28').catch(error => {
   throw error;
 });
