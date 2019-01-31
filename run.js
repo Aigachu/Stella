@@ -37,7 +37,7 @@ const client = new DiscordJS.Client();
 client.on('ready', () => {
 
 	// Set game text
-	client.user.setActivity('Super Smash Bros. Ultimate!').catch(console.error); 
+	client.user.setActivity('Smash with Dunston <3').catch(console.error); 
 
   // Send a message to the console.
   // You should see this message in the console when you run the bot. You can change this if you want!
