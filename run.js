@@ -36,6 +36,9 @@ const client = new DiscordJS.Client();
 // Code within this block is executed when a successful connection with Discord is established.
 client.on('ready', () => {
 
+	// Set game text
+	client.user.setActivity('Bein cute!').catch(console.error); 
+
   // Send a message to the console.
   // You should see this message in the console when you run the bot. You can change this if you want!
   console.log(`Logged in as ${client.user.tag}!`);
@@ -59,7 +62,6 @@ client.on('message', msg => {
   if (msg.content.includes('buzzfeed')) {
     msg.reply('Buzzfeed fucking sucks.');
   }
-
 });
 
 // Make the bot login to Discord.
