@@ -55,6 +55,11 @@ client.on('message', msg => {
     msg.reply('Pong!');
   }
 
+  // If the content of the message is EXACTLY 'buzzfeed', make the bot reply to the message with 'Shut your ass up.'.
+  if (msg.content.includes('buzzfeed')) {
+    msg.reply('Buzzfeed fucking sucks.');
+  }
+
 });
 
 // Make the bot login to Discord.
@@ -65,4 +70,6 @@ client.login(process.env.BOT_TOKEN).catch(error => {
 });
 
 // Dango's so cool!
-// LOOK AT THAT! https://www.google.com/search?q=retarded+horse&rlz=1C1MSIM_enCA754CA754&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiRqavml4rgAhVq3IMKHRfiD54Q_AUIDigB&biw=1680&bih=939#imgrc=YPMVsm7hfDxmnM:
+
+// adding Zelda to servers/channels 
+// https://discordapp.com/oauth2/authorize?&client_id=535309423359295489&scope=bot&permissions=1546959939
