@@ -15,5 +15,8 @@ ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; git pull";
 # Install NPM Dependencies.
 ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; npm install";
 
+# Stop current execution.
+ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; pm2 stop ${CI_BRANCH}";
+
 # Travel into this new folder and run the bot.
 ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; pm2 start run.js --name=${CI_BRANCH}";
