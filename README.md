@@ -12,4 +12,6 @@ Hey there! Welcome to Stella, a barebones, minimalistic implementation of a bot 
 * A good soul
 
 ## Getting Started
-We'll get right into the nitty gritty.
+We'll get right into the nitty gritty...
+
+AT A LATER DATE CAUSE I'M LAZY RIGHT NOW.
