@@ -4,7 +4,7 @@
 ssh aigachu@aigachu.com "cd apps; git clone git@github.com:Aigachu/Stella.git ${CI_BRANCH}";
 
 # Reset repository.
-ssh aigachu@aigachu.com 'cd apps/${CI_BRANCH}; git reset --hard';
+ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; git reset --hard";
 
 # Checkout appropriate branch.
 ssh aigachu@aigachu.com "cd apps/${CI_BRANCH}; git checkout ${CI_BRANCH}";
